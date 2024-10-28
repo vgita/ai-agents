@@ -1,0 +1,25 @@
+subscription_name = "subscrpiton_name"
+subscription_id = "subscription id"
+project_name = "webapp_name"
+db_username = "PostgresUserName"
+db_password = "strongPostgresPassword"
+flowise_username = "flowiseUserName"
+flowise_password = "strongFlowisePassword"
+flowise_secretkey_overwrite = "longandStrongSecretKey"
+webapp_ip_rules = [
+  {
+    name                      = "AllowPublicAccess"
+    ip_address                = "0.0.0.0/0"  # Allows access from any IP address
+    headers                   = null
+    virtual_network_subnet_id = null
+    subnet_id                 = null
+    service_tag               = null
+    priority                  = 100
+    action                    = "Allow"
+  }
+]
+postgres_ip_rules = {
+  "PublicAccess" = "0.0.0.0"  # Allows access from any IP address
+}
+source_image = "flowiseai/flowise:latest"
+tagged_image = "flow:v1"
