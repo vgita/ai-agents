@@ -133,3 +133,5 @@ dist
 *.lock.hcl
 .terraform
 flowise/terraform/terraform.tfstate
+
+.venv
