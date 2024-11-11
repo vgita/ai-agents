@@ -1,4 +1,4 @@
-from langchain.llms import OpenAI
+from langchain.chat_models import ChatOpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain, SequentialChain
 from dotenv import load_dotenv
@@ -11,7 +11,7 @@ parser.add_argument("--task", default="return the first 10 numbers of the fibona
 parser.add_argument("--language", default="python", type=str)
 args = parser.parse_args()
 
-llm = OpenAI()
+llm = ChatOpenAI()
 
 code_prompt = PromptTemplate(
   template = "Write a very short {language} function that will {task}",

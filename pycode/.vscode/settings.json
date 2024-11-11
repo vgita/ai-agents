@@ -1,3 +1,10 @@
 {
-    "cSpell.words": ["dotenv", "langchain", "llms", "openai"]
+    "cSpell.words": [
+        "dotenv",
+        "langchain",
+        "llms",
+        "mult",
+        "openai",
+        "vectorstores"
+    ]
 }
