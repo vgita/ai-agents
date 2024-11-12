@@ -5,6 +5,7 @@
         "llms",
         "mult",
         "openai",
+        "pydantic",
         "vectorstores"
     ]
 }

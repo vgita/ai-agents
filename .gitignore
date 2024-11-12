@@ -137,3 +137,4 @@ flowise/terraform/terraform.tfstate
 .venv
 
 emb
+*.sqlite
